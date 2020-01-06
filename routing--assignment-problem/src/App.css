@@ -1,0 +1,22 @@
+.App{
+    text-align: center;
+}
+.App ul{
+    width: 100%;
+}
+.App li{
+    list-style: none;
+    display: inline-block;
+    padding:16px;
+}
+.App a{
+    text-decoration: none;
+}
+.App a:hover,
+.App a:active,
+.App a.active{
+    text-decoration: underline;
+    font-weight: bold;
+    color: #ffaa22;
+    cursor: pointer;
+}
