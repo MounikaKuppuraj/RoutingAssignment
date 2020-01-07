@@ -5,12 +5,19 @@ class Course extends Component {
         title:''
     }
     componentDidMount(){
-        this.queryTitle()
+        const value=this.queryTitle()
+        this.setState({title:value})
+    }
+    componentDidUpdate(){
+        const value=this.queryTitle()
+        if(this.state.title!==value){
+            this.setState({title:value})
+        }
     }
     queryTitle=()=>{
         const query=new URLSearchParams(this.props.location.search)
-        for (const [key,value] of query.entries()) {
-           this.setState({title:value})
+        for (const [,value] of query.entries()) {
+           return value;
         }
     }
     render () {

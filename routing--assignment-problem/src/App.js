@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
-import {Route,NavLink,Switch, Redirect} from 'react-router-dom';
-import Courses from './containers/Courses/Courses';
-import Users from './containers/Users/Users';
+import {Route,NavLink,Switch,Redirect} from 'react-router-dom';
 import './App.css';
+import Users from './containers/Users/Users';
+import Courses from './containers/Courses/Courses';
 class App extends Component {
   render () {
     return (
